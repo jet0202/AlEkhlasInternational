@@ -1,0 +1,74 @@
+// Custom setup for basic startup theme
+jQuery(document).ready(function( $ ) {
+	//alert('I am Working In Front End');
+
+	// This code is required to use bootstrap navigation structure in wordpress
+	$('.dropdown').on('mouseenter mouseleave click tap', function() {
+	  	$(this).toggleClass("open");
+	});
+
+	$('.mobile,.menu-mobile').click(function(){
+		$('.menu-primary').toggleClass('mobile-nav');
+		$('.menu-primary li').addClass('m');
+	});
+
+	$('.nav-search').click(function(){
+		
+		$('.evensts-search').slideToggle('slow');
+	});
+
+	$('#share').click(function(){
+		$('.mobile-share').slideToggle('slow');
+	});
+
+	$('.date-picker').datepicker( {
+        changeMonth: true,
+        changeYear: true,
+        showButtonPanel: true,
+        dateFormat: 'yy-mm',
+        onClose: function(dateText, inst) { 
+            var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+            var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+            $(this).datepicker('setDate', new Date(year, month, 1));
+        }
+    });
+
+    // ================================================================
+    // Back to top
+    // ================================================================
+
+    (function () {
+        $(window).scroll(function(){
+            if (jQuery(this).scrollTop() > 50) {
+                jQuery('#backToTop').fadeIn('slow');
+            } else {
+                jQuery('#backToTop').fadeOut('slow');
+            }
+        });
+        $('#backToTop').click(function(){
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+            
+            return false;
+        });
+    }());
+
+     (function () {
+        $('#iconshow').on('keyup', function() {
+            var input = $(this);
+            if(input.val().length === 0) {
+                input.addClass('empty');
+            } else {
+                input.removeClass('empty');
+            }
+        });
+    }());
+
+
+
+
+
+});
+
+

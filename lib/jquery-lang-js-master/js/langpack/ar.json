@@ -1,0 +1,47 @@
+{
+	"token": {
+		"Home":"الصفحة الرئيسية",
+		"Our Business":"أعمالنا",
+		"Investors":"المستثمرين",
+		"About Us":"معلومات عنا",		
+		"Careers":"وظائف",
+		"Newsroom":"غرفة الأخبار",
+		"Contact Us": "اتصل بنا",
+		"International Holding Company":"الشركة الدولية القابضة",
+		"Learn more":"أعرف أكثر",		
+		"LEARN MORE ABOUT US":"تعلم المزيد عنا",
+		"More":"أكثر",		
+		"Total Assets":"مجموع الأصول",
+		"Revenue":"إيرادات",
+		"Total Employees":"عدد الموظفي",
+		"Subsidiaries":"الشركات التابعة",
+		"View Investor Information":"عرض معلومات المستثمر",
+		"Select an Industry":"اختر الصناعة",
+		"Education":"التعليم",
+		"Contruction":"اعمال بناء",
+		"Health Care":"الرعاية الصحية",
+		"Culinary Arts":"فنون الطهي",
+		"Food":"طعام",
+		"Investor Relations":"علاقات المستثمرين",
+		"Topics of Interest":"موضوعات ذات أهمية",
+		"Download Investment Report":"تحميل تقرير الاستثمار",
+		"Our Story":"قصتنا",		
+		"Learn about working with us":"تعرف على العمل معنا",
+		"Browse our Businesses":"تصفح أعمالنا",
+		"BROWSE OPEN POSITIONS":"تصفح المراكز المفتوحة",
+		"First Name":"الاسم الاول",
+		"Last Name":"الكنية",
+		"Email":"البريد الإلكتروني",
+		"Message":"رسالة",
+		"What kind of inquiry are you making":"أي نوع من التحقيق الذي تقوم به",
+		"Vist Website":"زيارة الموقع",
+		"AL EKHLAS":"الإخلاص"
+		
+					
+	},
+	"regex": [
+		["About Us", "معلومات عنا"],
+		["Learn more about us", "تعلم المزيد عنا"],
+		["This will be case insensitive", "i", ""]
+	]
+}
